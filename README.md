@@ -1,23 +1,40 @@
-Portfolio Website
+# 📌 Personal Portfolio Website  
 
-This is a personal portfolio website built using HTML and CSS. It showcases my skills, projects, resume, and contact information.
+## 🌟 Overview  
+This is a **personal portfolio website** built using **HTML and CSS**. It showcases my **skills, projects, resume, and contact information**, providing a professional online presence.  
 
-Features
+## 🚀 Features  
+- **Home Page**: Introduction and overview of the portfolio.  
+- **Skills Page**: List of technical and soft skills.  
+- **Projects Page**: Showcasing completed and ongoing projects.  
+- **Resume Page**: Downloadable resume for quick access.  
+- **Contact Page**: Contact form and details to reach out.  
 
-Home Page: Introduction and overview of the portfolio.
+## 🛠 Technologies Used  
+- **HTML**  
+- **CSS**  
 
-Skills Page: List of technical and soft skills.
+## 📌 How to Use  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/improperboy/portfolio.git
+   ```
+2. Open the `index.html` file in a browser.  
+3. Customize the content to add your details.  
 
-Projects Page: Showcasing completed and ongoing projects.
+## 🎨 Customization  
+- Modify the **HTML** structure to include your name, bio, and projects.  
+- Update the **CSS** file to change colors, fonts, and styles as per your preference.  
+- Add images and links to showcase your work.
 
-Resume Page: Downloadable resume.
+## Preview
 
-Contact Page: Contact form and details to reach out.
+https://github.com/user-attachments/assets/fb684f66-636b-44bb-b9e9-d5cb9a2c3a20
 
-Technologies Used
 
-HTML
+## 📩 Contact  
+If you have any questions or suggestions, feel free to reach out via the **Contact Page** in the portfolio.  
 
-CSS
+---
 
-![image](https://github.com/user-attachments/assets/4a2625a3-35d4-47e8-be24-c8b3993aef8b)
+Happy coding! 🚀
