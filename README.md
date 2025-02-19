@@ -29,8 +29,7 @@ This is a **personal portfolio website** built using **HTML and CSS**. It showca
 
 ## Preview
 
-https://github.com/user-attachments/assets/fb684f66-636b-44bb-b9e9-d5cb9a2c3a20
-
+https://github.com/user-attachments/assets/8e6dad5b-3f19-4005-b1f5-15d870f967c8
 
 ## 📩 Contact  
 If you have any questions or suggestions, feel free to reach out via the **Contact Page** in the portfolio.  
