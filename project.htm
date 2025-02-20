@@ -5,119 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Projects</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background-color: black;
-            color: white;
-            overflow-x: hidden;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-            background-color: transparent;
-        }
-        .logo {
-            text-decoration: none;
-            font-size: 2.5rem;
-            color: #b74b4b;
-            font-weight: 800;
-            cursor: pointer;
-            transition: 0.5s ease;
-        }
-        nav a {
-            text-decoration: none;
-            font-size: 1.4rem;
-            color: white;
-            margin-left: 2rem;
-            font-weight: 500;
-            transition: 0.3s ease;
-            border-bottom: 3px solid transparent;
-        }
-        nav a:hover,
-        nav a.active {
-            color: #b74b4b;
-            border-bottom: 3px solid #b74b4b;
-        }
-        section {
-            padding: 10rem 5%;
-        }
-        .section-title {
-            font-size: 4rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 5rem;
-            color: #b74b4b;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Three projects in a row */
-            gap: 3rem;
-        }
-        .project-card {
-            background-color: #161616;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover {
-            transform: scale(1.05);
-        }
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .project-content {
-            padding: 1.5rem;
-            text-align: center;
-        }
-        .project-title {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #b74b4b;
-            margin-bottom: 1rem;
-        }
-        .project-desc {
-            font-size: 1.4rem;
-            margin-bottom: 1.5rem;
-        }
-        .btn {
-            padding: 0.8rem 1.5rem;
-            font-size: 1.2rem;
-            color: #b74b4b;
-            border: 2px solid #b74b4b;
-            border-radius: 4rem;
-            text-decoration: none;
-            transition: 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #b74b4b;
-            color: black;
-            box-shadow: 0 0 25px #b74b4b;
-        }
-    </style>
+<link rel="stylesheet" href="css/project.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Ansh</a>
-        <nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="nav">
             <a href="index.htm">Home</a>
             <a href="skill.htm">Skills</a>
             <a href="project.htm" class="active">Projects</a>
@@ -128,78 +26,74 @@
     <section>
         <h1 class="section-title">My Projects</h1>
         <div class="projects">
-                      <!-- Project 1 -->
-                      <div class="project-card">
-                        <img src="media/currencyconverter.png" alt="Currency Converter">
-                        <div class="project-content">
-                            <h2 class="project-title">Currency Converter</h2>
-                            <p class="project-desc">A simple currency converter built with HTML, CSS, and JavaScript.</p>
-                            <a href="https://github.com/improperboy/Currency-Converter" target="_blank" class="btn">GitHub Link</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <img src="media/timedatepicker.png" alt="Time Date Picker">
-                        <div class="project-content">
-                            <h2 class="project-title">Custom Time Date Picker</h2>
-                            <p class="project-desc">A custom time and date picker component built using HTML, CSS, and JavaScript.</p>
-                            <a href="https://github.com/improperboy/Custom-date-time-picker" target="_blank" class="btn">GitHub Link</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <img src="media/qrcodescanner.png" alt="QR Code Scanner">
-                        <div class="project-content">
-                            <h2 class="project-title">QR Code Scanner</h2>
-                            <p class="project-desc">A web-based QR code scanner using HTML, CSS, and JavaScript.</p>
-                            <a href="https://github.com/improperboy/QR-Code-Scanner" target="_blank" class="btn">GitHub Link</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <img src="media/todolist.png" alt="To-Do List">
-                        <div class="project-content">
-                            <h2 class="project-title">To-Do List</h2>
-                            <p class="project-desc">A simple to-do list application with local storage support.</p>
-                            <a href="https://github.com/improperboy/To-Do-list" target="_blank" class="btn">GitHub Link</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 5 -->
-                    <div class="project-card">
-                        <img src="media/jobhunt.png" alt="Job Hunt">
-                        <div class="project-content">
-                            <h2 class="project-title">Job Hunt</h2>
-                            <p class="project-desc">A job-hunting web application to track job applications.</p>
-                            <a href="https://github.com/improperboy/Job-Hunt" target="_blank" class="btn">GitHub Link</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 6 -->
-                    <div class="project-card">
-                        <img src="media/portfolio.png" alt="Portfolio">
-                        <div class="project-content">
-                            <h2 class="project-title">Portfolio</h2>
-                            <p class="project-desc">A personal portfolio website showcasing my skills and projects.</p>
-                            <a href="https://github.com/improperboy/portfolio" target="_blank" class="btn">GitHub Link</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 7 -->
-                    <div class="project-card">
-                        <img src="media/budgettracker.png" alt="Budget Tracker">
-                        <div class="project-content">
-                            <h2 class="project-title">Budget Tracker</h2>
-                            <p class="project-desc">A budget tracker application to manage expenses and income.</p>
-                            <a href="https://github.com/improperboy/Personal-Budget-Tracker" target="_blank" class="btn">GitHub Link</a>
-                        </div>
-                    </div>
-        
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="media/currencyconverter.png" alt="Currency Converter">
+                <div class="project-content">
+                    <h2 class="project-title">Currency Converter</h2>
+                    <p class="project-desc">A simple currency converter built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/improperboy/Currency-Converter" target="_blank" class="btn">GitHub Link</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="media/timedatepicker.png" alt="Time Date Picker">
+                <div class="project-content">
+                    <h2 class="project-title">Custom Time Date Picker</h2>
+                    <p class="project-desc">A custom time and date picker component built using HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/improperboy/Custom-date-time-picker" target="_blank" class="btn">GitHub Link</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="media/qrcodescanner.png" alt="QR Code Scanner">
+                <div class="project-content">
+                    <h2 class="project-title">QR Code Scanner</h2>
+                    <p class="project-desc">A web-based QR code scanner using HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/improperboy/QR-Code-Scanner" target="_blank" class="btn">GitHub Link</a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="media/todolist.png" alt="To-Do List">
+                <div class="project-content">
+                    <h2 class="project-title">To-Do List</h2>
+                    <p class="project-desc">A simple to-do list application with local storage support.</p>
+                    <a href="https://github.com/improperboy/To-Do-list" target="_blank" class="btn">GitHub Link</a>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+                <img src="media/jobhunt.png" alt="Job Hunt">
+                <div class="project-content">
+                    <h2 class="project-title">Job Hunt</h2>
+                    <p class="project-desc">A job-hunting web application to track job applications.</p>
+                    <a href="https://github.com/improperboy/Job-Hunt" target="_blank" class="btn">GitHub Link</a>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card">
+                <img src="media/portfolio.png" alt="Portfolio">
+                <div class="project-content">
+                    <h2 class="project-title">Portfolio</h2>
+                    <p class="project-desc">A personal portfolio website showcasing my skills and projects.</p>
+                    <a href="https://github.com/improperboy/portfolio" target="_blank" class="btn">GitHub Link</a>
+                </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project-card">
+                <img src="media/budgettracker.png" alt="Budget Tracker">
+                <div class="project-content">
+                    <h2 class="project-title">Budget Tracker</h2>
+                    <p class="project-desc">A budget tracker application to manage expenses and income.</p>
+                    <a href="https://github.com/improperboy/Personal-Budget-Tracker" target="_blank" class="btn">GitHub Link</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="js/project.js">
+    
+    </script>
 </body>
 </html>
