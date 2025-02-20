@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="css/contact.css">
-
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +14,9 @@
             <i class="fas fa-bars"></i>
         </div>
         <nav id="nav">
-            <a href="index.htm">Home</a>
-            <a href="skill.htm">Skills</a>
-            <a href="project.htm">Project</a>
+            <a href="index.html">Home</a>
+            <a href="skill.html">Skills</a>
+            <a href="project.html">Project</a>
             <a href="Resume.html">Resume</a>
             <a href="ContactSection.html" class="active">Contact</a>
         </nav>
@@ -73,36 +72,53 @@
             </section>
 
             <section class="col right">
-                <form class="messageForm">
+                <form class="messageForm" action="https://formspree.io/f/mdkabkyl" method="POST">
                     <div class="inputGroup halfWidth">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="name" required="required">
                         <label>Your Name</label>
                     </div>
 
                     <div class="inputGroup halfWidth">
-                        <input type="email" name="" required="required">
+                        <input type="email" name="email" required="required">
                         <label>Email</label>
                     </div>
 
                     <div class="inputGroup fullWidth">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="subject" required="required">
                         <label>Subject</label>
                     </div>
 
                     <div class="inputGroup fullWidth">
-                        <textarea required="required"></textarea>
+                        <textarea name="message" required="required"></textarea>
                         <label>Say Something</label>
                     </div>
 
                     <div class="inputGroup fullWidth">
-                        <button>Send Message</button>
+                        <button type="submit">Send Message</button>
                     </div>
                 </form>
             </section>
         </main>
     </div>
 
-    <script src="js/contact.js">
+    <script src="js/contact.js"></script>
+    <script>
+        document.querySelector('.messageForm').addEventListener('submit', function(event) {
+            let name = document.querySelector('input[name="name"]').value;
+            let email = document.querySelector('input[name="email"]').value;
+            let subject = document.querySelector('input[name="subject"]').value;
+            let message = document.querySelector('textarea[name="message"]').value;
+
+            if (!name || !email || !subject || !message) {
+                alert('Please fill out all fields');
+                event.preventDefault();
+            }
+        });
+
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            let nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
