@@ -12,6 +12,7 @@ body {
 
 /* Header Section */
 header {
+       backdrop-filter: blur(10px);
     margin-bottom: 20px;
     position: fixed;
     top: 0;
