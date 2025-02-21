@@ -19,6 +19,7 @@ body {
     color: white;
 }
 header {
+       backdrop-filter: blur(10px);
     margin-top: 20px;
     position: fixed;
     top: 0;
